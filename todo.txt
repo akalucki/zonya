@@ -1,0 +1,9 @@
+Finish landing page
+Make 6 links pages
+Responsive
+Create simple server
+? Conect to mlab database and backend with adding new blog posts? 
+Deploy to heruku.
+
+
+every step saving on github
