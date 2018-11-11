@@ -7,207 +7,569 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,addresscite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+    vertical-align: middle;
 }
+
 /* ///////////////////////////// End reset ///////////////////////////// */
+
 /* ///////////////////////////// Global ///////////////////////////// */
-.wrapper{
-    width:100%;  
-    max-width:1170px;
-    margin:0 auto;
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
+
+.heading-title {
+    text-align: center;
+    width: 100%;
+    padding-top: 90px
+}
+
+.heading-title .title, .title {
+    font-family: Lato;
+    font-size: 16px;
+    color: #454545;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.heading-title .botTitle, .botTitle {
+    font-family: Sorts Mill Goudy;
+    font-size: 20px;
+    color: #989898;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.btn {
+    color: #fff;
+    font-family: Lato;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    width: 157px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
 /* ///////////////////////////// End global ///////////////////////////// */
+
 /* ///////////////////////////// Header ///////////////////////////// */
-header{
+header {
     background-color: #2d2d30;
-    width:100%;
-}
-header #logo {
-    float:left;
-    font-family:Archer Lato;
-    margin:25px 0 25px 0;
-}
-header #logo #reast_letters{
-    color:#c5c5c5;
-    font-size:14px;
-    vertical-align: 11px;
-    
-}
-header #logo #letter_z{
-    color:#7bb9b3;
-    font-size:46px
-    
-}
-header nav{
-    float:right;
-}
-header:after{
-    content:"";
-    display:block;
-    clear:both;
-}
-header nav h2{
-    height:0;
-    text-indent:-10000px;
-}
-header nav ul li{
-    float:left;
-    margin:37px 0 0 50px;  
-}
-header nav ul li span{
-    margin-left:27px;
-    font-size:6px;
-    color:#3f3f42;
-}
-header nav ul li a{
-    font-family:Lato;
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    color:#b5b5b5;
-    text-decoration:none;
-}
-/* ///////////////////////////// End header ///////////////////////////// */
-/* ///////////////////////////// Baner ///////////////////////////// */
-.leading-banner img{
     width: 100%;
 }
-.leading-banner{
-    max-height:648px;
+
+header #logo {
+    float: left;
+    font-family: Archer Lato;
+    margin: 25px 0 25px 0;
+}
+
+header #logo #reast_letters {
+    color: #c5c5c5;
+    font-size: 14px;
+    vertical-align: 11px;
+
+}
+
+header #logo #letter_z {
+    color: #7bb9b3;
+    font-size: 46px
+}
+
+header nav {
+    float: right;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header nav h2 {
+    height: 0;
+    text-indent: -10000px;
+}
+
+header nav ul li {
+    float: left;
+    margin: 37px 0 0 50px;
+}
+
+header nav ul li span {
+    margin-left: 27px;
+    font-size: 6px;
+    color: #3f3f42;
+}
+
+header nav ul li a {
+    font-family: Lato;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+/* ///////////////////////////// End header ///////////////////////////// */
+
+/* ///////////////////////////// Baner ///////////////////////////// */
+
+.leading-banner img {
+    width: 100%;
+}
+
+.leading-banner {
+    max-height: 648px;
     overflow: hidden;
-    position:relative;
+    position: relative;
 }
-.leading-banner .banner-overlay{
-    position:absolute;
-    top:30%;
-    width:100%;
-    text-align:center;
-    color:#fff;    
+
+.leading-banner .banner-overlay {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
 }
-.leading-banner .banner-overlay h2{
-    font-family:Lato;
+
+.leading-banner .banner-overlay h2 {
+    font-family: Lato;
     font-size: 40px;
-    text-transform:uppercase;
-    letter-spacing:3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-.leading-banner .banner-overlay p{
-    margin:30px 0;
+
+.leading-banner .banner-overlay p {
+    margin: 30px 0;
     font-family: Sorts Mill Goudy;
-    font-size:28px;
-    font-style:italic;
-    letter-spacing:1px;
+    font-size: 28px;
+    font-style: italic;
+    letter-spacing: 1px;
 }
-.leading-banner .banner-overlay a{
-    text-decoration:none;
-    color:#fff;
-    font-family:Lato;
-    font-size:12px;
-    text-transform:uppercase;
-    display:block;
-    width:157px;
-    height:40px;
-    line-height:40px;
-    margin:auto;
-    border:1px solid #fff;
-    border-radius:3px;
+
+.leading-banner .banner-overlay a {
+    border: 1px solid #fff;
+    margin: auto;
 }
-/* ///////////////////////////// End Baner ///////////////////////////// */
 
+/*/ ///////////////////////////// End Baner ///////////////////////////// */
 
+/* ///////////////////////////// First section ///////////////////////////// */
+#services {
+    background-color: #f7f7f7;
+}
 
+#services ul {
+    list-style-type: none;
+}
 
+#services ul li {
+    float: left;
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    margin: 50px 0 75px 0;
+}
 
+#services ul li img {
+    padding-bottom: 20px;
+    /*border-bottom:2px solid #d7d7d7;*/
+}
 
+#services ul li .horisontal-line {
+    background-color: #d7d7d7;
+    margin: 0 45% 0 45%;
+}
 
+#services ul li h4 {
+    font-family: Lato;
+    font-size: 14px;
+    color: #454545;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+#services ul li p {
+    font-family: Lato;
+    font-size: 14px;
+    color: #8a8a8a;
+    line-height: 2em;
+}
+
+#services:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* /////////////////////////// End First section///////////////////////////// */
+
+/* ///////////////////////////// Second section ///////////////////////////// */
+
+#product {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#product img {
+    margin-top: 45px;
+}
+
+#product #sectionParagraph {
+    font-family: Lato;
+    font-size: 14px;
+    color: #a7a7a7;
+    margin: 0 17%;
+    line-height: 1.8em;
+}
+
+#product #left-btn {
+    background-color: #47474d;
+    color: #fff;
+    margin: 40px 10px 90px 0;
+    display: inline-block;
+
+}
+
+#product #right-btn {
+    background-color: #82c6bf;
+    display: inline-block;
+}
+
+#product:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* /////////////////////////////End Second section ///////////////////////////// */
+
+/* ///////////////////////////// Third section ///////////////////////////// */
+#works {
+    background-color: #2d2d30;
+}
+
+#works #ourWork {
+    width: 23%;
+    padding: 90px 0 185px 0;
+    margin-right: 1%;
+    display: block;
+    float: left;
+}
+
+#works #ourWork h3 {
+    font-family: Lato;
+    font-size: 16px;
+    color: #dadada;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#works #ourWork h5 {
+    font-family: Sorts Mill Goudy;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 20px 0 35px 0;
+    line-height: 1.4em;
+    color: #a4a4a4;
+}
+
+#works #ourWork p {
+    font-family: Lato;
+    font-size: 14px;
+    color: #a4a4a4;
+    line-height: 1.8em;
+    margin-bottom: 40px;
+}
+
+#works #ourWork a {
+    color: #a4a4a4;
+    text-align: center;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+}
+
+#works #workImg {
+    padding: 90px 0 90px 0;
+}
+
+#works #workImg img {
+    width: 23%;
+    margin: 0 1% 1% 0;
+}
+
+#works:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* /////////////////////////////End Third section //////////////////////////// */
+
+/* ///////////////////////////// Fourth section //////////////////////////// */
+#customers {
+    background-color: #f1f1f1;
+}
+
+#customers #customersQuotes {
+    position: relative;
+}
+
+#customers #verticaLine {
+    width: 2px;
+    height: 540px;
+    background-color: #e3e3e3;
+    position: absolute;
+    left: 50%;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+#customers #left {
+    width: 50%;
+    float: left;
+}
+
+#customers #right {
+    width: 50%;
+    float: right;
+}
+
+#customers img {
+    z-index: 2;
+    position: absolute;
+    right: 46%;
+}
+
+#customers #cGibson {
+    top: 0px;
+
+}
+
+#customers #nBrooten {
+    top: 205px;
+}
+
+#customers #bWiderski {
+
+    top: 405px;
+}
+
+#customers #customersQuotes {
+    margin-top: 60px;
+}
+
+#customers #customersQuotes #nameLeft {
+    text-align: right;
+    padding-right: 10%;
+}
+
+#customers #customersQuotes #nameRight {
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 130px
+}
+
+#customers #customersQuotes .name h6 {
+    font-family: Lato;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #454545;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+#customers #customersQuotes .name p {
+    font-family: Sorts Mill Goudy;
+    font-size: 16px;
+    color: #878686;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#customers #customersQuotes .quote p {
+    font-family: Sorts Mill Goudy;
+    font-size: 19px;
+    color: #878686;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    width: 78%;
+    background-color: #fff;
+    padding: 25px;
+    line-height: 1.8em;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#customers #customersQuotes #quoteLeft p {
+    margin: 140px 0 70px 0;
+}
+
+#customers #left #triLeft {
+    width: 0px;
+    height: 0px;
+    background-color: f1f1f1;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    top: 240px;
+    left: 43.2%;
+}
+
+#customers #right #triRightTop {
+    width: 0px;
+    height: 0px;
+    background-color: f1f1f1;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 30px;
+    right: 43.2%;
+}
+#customers #right #triRightBottom {
+    width: 0px;
+    height: 0px;
+    background-color: f1f1f1;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 440px;
+    right: 43.2%;
+}
+
+#customers #customersQuotes #quoteRight p {
+    margin-bottom: 80px;
+    float: right;
+}
+
+#customers #customersQuotes:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* /////////////////////////////End Fourth section //////////////////////////// */
+
+/* /////////////////////////////Fiveth  section //////////////////////////// */
+#blog{
+    background-color: #f7f7f7;
+}
+#blog ul{
+    display: flex;
+    list-style-type:none;
+    justify-content:space-between;
+    padding-top:90px
+    
+}
+#blog ul li{
+    flex-basis:32%;
+}
+#blog ul li p{
+    font-family: Lato;
+    font-size:14px;
+    line-height: 2em;
+    margin:25px 0;
+    padding:0 25px
+}
+#blog ul li h5{
+    
+}
