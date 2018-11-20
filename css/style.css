@@ -405,7 +405,7 @@ header nav ul li a {
     background-color: #f1f1f1;
 }
 
-#customers #customersQuotes {
+#customers {
     position: relative;
 }
 
@@ -418,21 +418,11 @@ header nav ul li a {
     margin-top: 40px;
     z-index: 1;
 }
-
-#customers #left {
-    width: 50%;
-    float: left;
-}
-
-#customers #right {
-    width: 50%;
-    float: right;
-}
-
 #customers img {
     z-index: 2;
     position: absolute;
-    right: 46%;
+    right: 50%;
+    display:none;/*!!!!!!!!!*/
 }
 
 #customers #cGibson {
@@ -449,22 +439,16 @@ header nav ul li a {
     top: 405px;
 }
 
-#customers #customersQuotes {
-    margin-top: 60px;
-}
-
-#customers #customersQuotes #nameLeft {
+#customers #customersQuotes1 #nameOne {
+    float:left;
     text-align: right;
-    padding-right: 10%;
-}
-
-#customers #customersQuotes #nameRight {
-    text-align: left;
     padding-left: 10%;
-    margin-bottom: 130px
+    margin-bottom: 130px;
 }
-
-#customers #customersQuotes .name h6 {
+#customers #customersQuotes1 #quoteOne{
+  float:right;
+}
+#customers .name h6 {
     font-family: Lato;
     font-size: 14px;
     text-transform: uppercase;
@@ -473,76 +457,28 @@ header nav ul li a {
     margin-top: 25px;
 }
 
-#customers #customersQuotes .name p {
+#customers .name p {
     font-family: Sorts Mill Goudy;
     font-size: 16px;
     color: #878686;
     font-style: italic;
     margin-top: 10px;
 }
-
-#customers #customersQuotes .quote p {
+#customers .quote p {
     font-family: Sorts Mill Goudy;
     font-size: 19px;
     color: #878686;
     font-style: italic;
     text-align: center;
     display: block;
-    width: 78%;
+    width: 40%;
     background-color: #fff;
     padding: 25px;
     line-height: 1.8em;
     border-bottom: 1px solid #dbdbdb;
 }
 
-#customers #customersQuotes #quoteLeft p {
-    margin: 140px 0 70px 0;
-}
-
-#customers #left #triLeft {
-    width: 0px;
-    height: 0px;
-    background-color: f1f1f1;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #fff;
-    position: absolute;
-    top: 240px;
-    left: 43.2%;
-}
-
-#customers #right #triRightTop {
-    width: 0px;
-    height: 0px;
-    background-color: f1f1f1;
-    border-top: 10px solid transparent;
-    border-right: 10px solid #fff;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    position: absolute;
-    top: 30px;
-    right: 43.2%;
-}
-#customers #right #triRightBottom {
-    width: 0px;
-    height: 0px;
-    background-color: f1f1f1;
-    border-top: 10px solid transparent;
-    border-right: 10px solid #fff;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    position: absolute;
-    top: 440px;
-    right: 43.2%;
-}
-
-#customers #customersQuotes #quoteRight p {
-    margin-bottom: 80px;
-    float: right;
-}
-
-#customers #customersQuotes:after {
+#customers #customersQuotes1:after {
     content: "";
     display: block;
     clear: both;
@@ -615,4 +551,13 @@ footer {
     font-family:Lato;
     font-size:14px;
     padding:40px 0;
+}
+
+/* MEDIA QUERY*/ 
+
+@media screen and (max-width: 1148px){
+    #customers #verticaLine{
+        display:none;
+    }
+    
 }
